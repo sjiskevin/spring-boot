@@ -1,0 +1,17 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /kevinshen/spring-boot
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
+
+spring:
+  security:
+    user:
+      name: actuator
+      password: actuator
+      roles: ENDPOINT_ADMIN
